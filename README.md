@@ -11,7 +11,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+To view the HTML/CSS-only version of the app, right-click on index.html within VS Code and select "Open with Live Server".\To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
