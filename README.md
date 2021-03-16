@@ -7,9 +7,6 @@ A sample sign-up page UI implemented using React. This project was bootstrapped 
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
-### Built With
-
-* [React](https://reactjs.org)
 
 <!-- GETTING STARTED -->
 ## Getting Started
