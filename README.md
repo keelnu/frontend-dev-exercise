@@ -3,15 +3,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Sample sign-up page UI.
+A sample sign-up page UI implemented using React. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
 
 * [React](https://reactjs.org)
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -35,10 +33,22 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm install
    ```
-3. Spin up server to view page in the browser at localhost:3000
+3. Runs the app in development mode.
    ```sh
-   npm run start
+   npm start
    ```
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+4. Builds the app for production to the `build` folder.
+   ```sh
+   npm run build
+   ```
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
 
 <!-- CONTACT -->
 ## Contact
