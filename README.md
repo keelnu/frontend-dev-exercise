@@ -42,8 +42,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm run build
    ```
-   It correctly bundles React in production mode and optimizes the build for the best performance.
-
+   It correctly bundles React in production mode and optimizes the build for the best performance.\
    The build is minified and the filenames include the hashes.
 
 <!-- CONTACT -->
