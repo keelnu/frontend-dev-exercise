@@ -45,7 +45,7 @@ To get a local copy up and running follow these simple steps.
 
 Kristiina Eelnurme - [@keelnu](https://twitter.com/keelnurme) - kristiina.eelnurme@gmail.com
 
-Project Link: [https://github.com/your_username/frontend-dev-exercise](https://github.com/keelnu/frontend-dev-exercise/)
+Project Link: [https://github.com/keelnu/frontend-dev-exercise](https://github.com/keelnu/frontend-dev-exercise/)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
