@@ -57,3 +57,4 @@ Project Link: [https://github.com/keelnu/frontend-dev-exercise](https://github.c
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [These alpha binaural beats via YouTube](https://www.youtube.com/watch?v=p2_zDvtPQ-g)
