@@ -10,8 +10,47 @@
   </head>
 
   <body>
-    <header>This is the sign-up page at index.html</header>
     <div id="root"></div>
     <script src="/dist/bundle.js"></script>
+
+    <!-- main container that holds sign-up form -->
+    <main>
+      <!-- body of form -->
+      <form>
+        <!-- chat bubble svg and form header -->
+        <figure>
+          <img src="/public/chatbubble.svg" alt="chat bubble svg" />
+        </figure>
+        <h1>Tell us about yourself</h1>
+        <!-- form fields -->
+        <section>
+          <!-- business name and website fields -->
+          <input type="text" id="name" name="business" placeholder="What is the name of your business?" >
+          <p class="required-text">Business Name Required</p>
+          <input type="text" id="website" name="website" placeholder="Business website" >
+          <p class="required-text">Business Website Required</p>
+          <!-- ticketing system drop-down menu -->
+          <select name="ticketing-system" id="system-name">
+            <option value="select">Select your ticketing system</option>
+            <option value="zendesk">Zendesk</option>
+            <option value="intercom">Intercom</option>
+            <option value="gorgias">Gorgias</option>
+          </select>
+          <p class="required-text">Ticketing System Required</p>
+          <!-- email and password fields -->
+          <input type="email" id="mail" name="usermail" placeholder="Your email" >
+          <p class="required-text">Email Required</p>
+          <input type="password" id="pwd" name="password" placeholder="Password" >
+          <p class="required-text">Password Required</p>
+        </section>
+        <!-- terms of service -->
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I accept the <a href="terms.html">Terms of Service.</a></label>
+        <!-- sign-up button -->
+        <div>
+          <button type="submit">Sign-up</button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
