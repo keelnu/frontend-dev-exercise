@@ -1,16 +1,143 @@
-body {
+*,
+*:before,
+*:after {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* font-size: calc(1em + 1vw); */
+	font-size: 62.5%;
+}
+
+body {
+	height: 100%;
 	font-family: 'Lato', sans-serif;
-	/* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+/* min/max width and height values in vw/vh to account for device size */
+.form-container {
+	border: 0px solid rgb(13, 206, 100);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	min-width: 50vw;
+	max-width: 70vw;
+	min-height: 70vh;
+	max-height: 90vh;
+	background: #ffffff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 1rem;
 }
 
-img {
-	height: 2em;
-	width: 2em;
+#chat-bubble-svg {
+	display: block;
+	margin: auto;
+	height: 3.75rem;
+	width: 3.75rem;
+	opacity: 35%;
+}
+
+.form-header {
+	border: 0px solid red;
+	font-weight: normal;
+	font-size: 3rem;
+	line-height: 1;
+	text-align: center;
+	color: #22386f;
+	margin-top: 1.5rem;
+}
+
+/* grouping of chat bubble icon and h1 */
+.form-heading {
+	border: 0px dashed magenta;
+	/* margin: 4rem 0; */
+	padding: 4rem 0;
+}
+
+/* grouping of form-group classes */
+.form-fields {
+	border: 0px solid rgb(243, 163, 14);
+	padding: 0 4rem;
+	width: 100%;
+}
+
+/* grouping of form-input and required-text classes */
+.form-group {
+	border: 0px dashed rgb(8, 124, 95);
+	margin: 1rem 0 0 0;
+	line-height: 1.5;
+}
+
+.form-input {
+	border: 0px solid rgb(44, 67, 199);
+	display: block;
+	font-size: 1.25rem;
+	padding-bottom: 0.5rem;
+	color: #111d35;
+	width: 100%;
+	border-bottom: 1px solid #c3e4ea;
+}
+
+/* placeholder text in form inputs */
+::placeholder {
+	color: #77a4ac;
+}
+
+.required-text {
+	color: #ff0000;
+	font-size: 1rem;
+	padding-top: 0.25rem;
+}
+
+/* terms of service and link styling */
+.terms {
+	border: 0px dashed magenta;
+	font-size: 1.25rem;
+	text-align: center;
+	color: #22386f;
+	margin: 2em;
+}
+
+.terms a {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:visited {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:hover {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:active {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.btn {
+	width: 100%;
+	border: 0;
+	/* height: 4.5em; */
+	/* margin: 0em 0; */
+	border-radius: 0 0 1rem 1rem;
+	color: #ffffff;
+	text-align: center;
+	font-size: 1.8em;
+	padding: 3rem;
+	background: linear-gradient(180deg, #79d9f1 0%, #44b1df 100%);
+}
+
+/* ensure that form elements inherit font characteristics, as most browsers use a different font family and size for form elements */
+button,
+input,
+select {
+	font-family: inherit;
+	font-size: 100%;
 }

@@ -10,47 +10,67 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    <script src="/dist/bundle.js"></script>
+    <div id="root">
+      <!-- main container that holds sign-up form -->
+      <main>
+        <!-- body of form -->
+        <form class="form-container">
+          <!-- chat bubble svg and form header -->
+          <div class="form-heading">
+            <figure>
+              <img id="chat-bubble-svg" src="/public/chatbubble.svg" alt="chat bubble svg" />
+            </figure>
+            <h1 class="form-header">Tell us about <br> yourself</h1>
+          </div>
+          <!-- form fields -->
+          <section class="form-fields">
+            <!-- business name and website fields -->
+            <div class="form-group">
+              <input type="text" class="form-input" id="name" name="business" placeholder="What is the name of your business?" >
+              <p class="required-text">Business Name Required</p>
+            </div>
 
-    <!-- main container that holds sign-up form -->
-    <main>
-      <!-- body of form -->
-      <form>
-        <!-- chat bubble svg and form header -->
-        <figure>
-          <img src="/public/chatbubble.svg" alt="chat bubble svg" />
-        </figure>
-        <h1>Tell us about yourself</h1>
-        <!-- form fields -->
-        <section>
-          <!-- business name and website fields -->
-          <input type="text" id="name" name="business" placeholder="What is the name of your business?" >
-          <p class="required-text">Business Name Required</p>
-          <input type="text" id="website" name="website" placeholder="Business website" >
-          <p class="required-text">Business Website Required</p>
-          <!-- ticketing system drop-down menu -->
-          <select name="ticketing-system" id="system-name">
-            <option value="select">Select your ticketing system</option>
-            <option value="zendesk">Zendesk</option>
-            <option value="intercom">Intercom</option>
-            <option value="gorgias">Gorgias</option>
-          </select>
-          <p class="required-text">Ticketing System Required</p>
-          <!-- email and password fields -->
-          <input type="email" id="mail" name="usermail" placeholder="Your email" >
-          <p class="required-text">Email Required</p>
-          <input type="password" id="pwd" name="password" placeholder="Password" >
-          <p class="required-text">Password Required</p>
-        </section>
-        <!-- terms of service -->
-        <input type="checkbox" id="terms" name="terms">
-        <label for="terms">I accept the <a href="terms.html">Terms of Service.</a></label>
-        <!-- sign-up button -->
-        <div>
-          <button type="submit">Sign-up</button>
-        </div>
-      </form>
-    </main>
+            <div class="form-group">
+              <input type="text" class="form-input" id="website" name="website" placeholder="Business website" >
+              <p class="required-text">Business Website Required</p>
+            </div>
+
+            <!-- ticketing system drop-down menu -->
+            <div class="form-group">
+              <select name="ticketing-system" class="form-input" id="system-name">
+                <option value="select">Select your ticketing system</option>
+                <option value="zendesk">Zendesk</option>
+                <option value="intercom">Intercom</option>
+                <option value="gorgias">Gorgias</option>
+              </select>
+              <p class="required-text">Ticketing System Required</p>
+            </div>
+
+            <!-- email and password fields -->
+            <div class="form-group">
+              <input type="email" class="form-input" id="mail" name="usermail" placeholder="Your email" >
+              <p class="required-text">Email Required</p>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-input" id="pwd" name="password" placeholder="Password" >
+              <p class="required-text">Password Required</p>
+            </div>
+          </section>
+          <!-- terms of service -->
+          <div class="terms">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I accept the <a href="terms.html">Terms of Service.</a>
+            </label>
+          </div>
+          <!-- sign-up button -->
+          <div>
+            <button type="submit" class="btn">Sign-up</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="/dist/bundle.js"></script>
   </body>
 </html>
