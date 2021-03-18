@@ -7,26 +7,30 @@
 }
 
 html {
-	/* font-size: calc(1em + 1vw); */
 	font-size: 62.5%;
 }
 
 body {
 	height: 100%;
+	width: 100%;
 	font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	padding: 6rem;
 }
 
 /* min/max width and height values in vw/vh to account for device size */
 .form-container {
-	border: 0px solid rgb(13, 206, 100);
-	display: flex;
+	/* flex: 1; */
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: stretch;
-	min-width: 50vw;
-	max-width: 70vw;
-	min-height: 70vh;
-	max-height: 90vh;
+	min-width: 70vw;
+	/* max-width: 40%; */
+	min-height: 60vh;
+	/* max-height: 90vh; */
 	background: #ffffff;
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
 	border-radius: 1rem;
@@ -35,16 +39,17 @@ body {
 #chat-bubble-svg {
 	display: block;
 	margin: auto;
-	height: 3.75rem;
-	width: 3.75rem;
+	height: calc(3.5rem + 2vw);
+	width: calc(3.5rem + 2vw);
 	opacity: 35%;
 }
 
+h1 {
+	font-size: calc(2rem + 1.75vw);
+}
+
 .form-header {
-	border: 0px solid red;
 	font-weight: normal;
-	font-size: 3rem;
-	line-height: 1;
 	text-align: center;
 	color: #22386f;
 	margin-top: 1.5rem;
@@ -52,7 +57,6 @@ body {
 
 /* grouping of chat bubble icon and h1 */
 .form-heading {
-	border: 0px dashed magenta;
 	padding: 4rem 0;
 }
 
@@ -73,7 +77,7 @@ body {
 .form-input {
 	border: 0px solid rgb(44, 67, 199);
 	display: block;
-	font-size: 1.25rem;
+	font-size: calc(1rem + 0.5vw);
 	padding: 0.5rem 0;
 	color: #111d35;
 	width: 100%;
@@ -96,7 +100,7 @@ body {
 
 .required-text {
 	color: #ff0000;
-	font-size: 1rem;
+	font-size: calc(0.75rem + 0.5vw);
 	padding-top: 0.25rem;
 }
 
@@ -104,7 +108,7 @@ body {
 .terms {
 	border: 0px solid magenta;
 	margin: 2em;
-	font-size: 1.2rem;
+	font-size: calc(0.75rem + 0.5vw);
 	line-height: 1rem;
 	text-align: center;
 	color: #22386f;
@@ -143,7 +147,7 @@ input[type='checkbox'] {
 	border-radius: 0 0 1rem 1rem;
 	color: #ffffff;
 	text-align: center;
-	font-size: 1.8em;
+	font-size: calc(1.5rem + 0.75vw);
 	padding: 3rem;
 	background: linear-gradient(180deg, #79d9f1 0%, #44b1df 100%);
 }
