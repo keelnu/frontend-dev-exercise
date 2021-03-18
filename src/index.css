@@ -12,6 +12,7 @@
 } */
 
 body {
+	height: 100%;
 	font-family: 'Lato', sans-serif;
 	font-size: 62.5%;
 	/* border: 2px solid red; */
@@ -45,8 +46,9 @@ select {
 
 .form {
 	border: 2px solid red;
-	width: 418px;
-	height: 608px;
+	width: 55%;
+	height: 100%;
+	/* height: 608px; */
 	padding: 0em;
 	background: #ffffff;
 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
@@ -80,6 +82,7 @@ select {
 .terms {
 	font-size: 1.08em;
 	color: #22386f;
+	margin: 2em;
 }
 
 .terms a {
@@ -105,8 +108,11 @@ select {
 .btn {
 	border: 0px;
 	width: 100%;
-	height: 8em;
+	height: 4.5em;
+	/* margin: 0em 0; */
 	/* border-radius: 13px; */
 	color: #ffffff;
+	text-align: center;
+	font-size: 1.8em;
 	background: linear-gradient(180deg, #79d9f1 0%, #44b1df 100%);
 }
