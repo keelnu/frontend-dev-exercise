@@ -53,7 +53,6 @@ body {
 /* grouping of chat bubble icon and h1 */
 .form-heading {
 	border: 0px dashed magenta;
-	/* margin: 4rem 0; */
 	padding: 4rem 0;
 }
 
@@ -75,7 +74,7 @@ body {
 	border: 0px solid rgb(44, 67, 199);
 	display: block;
 	font-size: 1.25rem;
-	padding-bottom: 0.5rem;
+	padding: 0.5rem 0;
 	color: #111d35;
 	width: 100%;
 	border-bottom: 1px solid #c3e4ea;
@@ -85,6 +84,15 @@ body {
 ::placeholder {
 	color: #77a4ac;
 }
+
+.form-input:focus,
+.form-input:hover {
+	border-bottom: 1px solid #9013fe;
+}
+
+/* input:valid {
+	background-color: powderblue;
+} */
 
 .required-text {
 	color: #ff0000;
