@@ -6,12 +6,12 @@
 	padding: 4rem 0 2rem 0;
 }
 
-#chat-bubble-svg {
+.chat-bubble-svg {
 	display: block;
 	margin: auto;
-	height: calc(3.5rem + 2vw);
-	width: calc(3.5rem + 2vw);
-	opacity: 35%;
+	height: calc(3rem + 1.5vw);
+	width: calc(3rem + 1.5vw);
+	opacity: 0.35;
 }
 
 h1 {
