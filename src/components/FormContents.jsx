@@ -2,7 +2,6 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import styles from '../styles/FormContents.module.css';
 
-
 const FormContents = () => {
   const {register, handleSubmit, errors} = useForm();
 
@@ -10,6 +9,7 @@ const FormContents = () => {
     // handleSubmit() will only execute is form data is correct
     <form
       onSubmit={handleSubmit((formData) => {
+        // console logging formData to show what would be submitted to the server in an http post request if we were going to save the form input data 
         console.log('formData', formData);
     })}>
       <div className={styles['form-fields']}>
