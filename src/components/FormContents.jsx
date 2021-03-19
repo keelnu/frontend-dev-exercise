@@ -6,10 +6,14 @@ import Button from './Button';
 const FormContents = () => {
 
   // logic for form to go here
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert('You have submitted the form.')
+  };
 
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <fieldset className={styles['form-fields']}>
           <input
             name="name"
