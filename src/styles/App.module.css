@@ -1,3 +1,21 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
 /* min/max width and height values in vw/vh to account for device size */
 .form-container {
 	display: flex;
