@@ -1,5 +1,7 @@
 /* grouping of form-group classes */
 .form-fields {
+	display: flex;
+	flex-direction: column;
 	border: none;
 	padding: 0 4rem;
 	width: 100%;
@@ -8,6 +10,7 @@
 .form-input {
 	border: none;
 	display: block;
+	font-family: 'Lato', sans-serif;
 	font-size: calc(1rem + 0.5vw);
 	line-height: 1.5;
 	color: #111d35;
@@ -27,13 +30,65 @@
 	border-bottom: 1px solid #9013fe;
 }
 
-/* input:valid {
-	background-color: powderblue;
-} */
+/* Checks if placeholder is visible, if user typed input, it's not, therefore make input field underline in purple */
+input:not(:placeholder-shown) {
+	border-bottom: 1px solid #9013fe;
+}
 
 .required-text {
 	color: #ff0000;
 	font-size: calc(0.75rem + 0.5vw);
 	line-height: 1.5;
 	padding-top: 0.25rem;
+}
+
+/* terms of service and link styling */
+.terms {
+	border: none;
+	margin: 2em;
+	font-size: calc(0.75rem + 0.5vw);
+	line-height: 1rem;
+	text-align: center;
+	color: #22386f;
+}
+
+input[type='checkbox'] {
+	vertical-align: middle;
+	position: relative;
+	bottom: 1px;
+	margin-right: 0.5rem;
+}
+
+.terms a {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:visited {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:hover {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:active {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.btn {
+	width: 100%;
+	border: none;
+	border-radius: 0 0 1rem 1rem;
+	color: #ffffff;
+	text-align: center;
+	font-size: calc(1.5rem + 0.75vw);
+	padding: 3rem;
+	margin: 0;
+	background: linear-gradient(180deg, #79d9f1 0%, #44b1df 100%);
+	cursor: pointer;
+	transition: 220ms all ease-in-out;
 }
