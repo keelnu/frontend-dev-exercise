@@ -1,0 +1,43 @@
+/* grouping of form-group classes */
+.form-fields {
+	border: 0px solid rgb(243, 163, 14);
+	padding: 0 4rem;
+	width: 100%;
+}
+
+/* grouping of form-input and required-text classes */
+.form-group {
+	border: 0px dashed rgb(8, 124, 95);
+	margin: 1rem 0 0 0;
+	line-height: 1.5;
+}
+
+.form-input {
+	border: 0px solid rgb(44, 67, 199);
+	display: block;
+	font-size: calc(1rem + 0.5vw);
+	padding: 0.5rem 0;
+	color: #111d35;
+	width: 100%;
+	border-bottom: 1px solid #c3e4ea;
+}
+
+/* placeholder text in form inputs */
+::placeholder {
+	color: #77a4ac;
+}
+
+.form-input:focus,
+.form-input:hover {
+	border-bottom: 1px solid #9013fe;
+}
+
+/* input:valid {
+	background-color: powderblue;
+} */
+
+.required-text {
+	color: #ff0000;
+	font-size: calc(0.75rem + 0.5vw);
+	padding-top: 0.25rem;
+}

@@ -1,0 +1,36 @@
+/* terms of service and link styling */
+.terms {
+	border: 0px solid magenta;
+	margin: 2em;
+	font-size: calc(0.75rem + 0.5vw);
+	line-height: 1rem;
+	text-align: center;
+	color: #22386f;
+}
+
+input[type='checkbox'] {
+	vertical-align: middle;
+	position: relative;
+	bottom: 1px;
+	margin-right: 0.5rem;
+}
+
+.terms a {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:visited {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:hover {
+	color: #22386f;
+	text-decoration: underline;
+}
+
+.terms a:active {
+	color: #22386f;
+	text-decoration: underline;
+}
