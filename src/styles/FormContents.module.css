@@ -1,23 +1,18 @@
 /* grouping of form-group classes */
 .form-fields {
-	border: 0px solid rgb(243, 163, 14);
+	border: none;
 	padding: 0 4rem;
 	width: 100%;
 }
 
-/* grouping of form-input and required-text classes */
-.form-group {
-	border: 0px dashed rgb(8, 124, 95);
-	margin: 1rem 0 0 0;
-	line-height: 1.5;
-}
-
 .form-input {
-	border: 0px solid rgb(44, 67, 199);
+	border: none;
 	display: block;
 	font-size: calc(1rem + 0.5vw);
-	padding: 0.5rem 0;
+	line-height: 1.5;
 	color: #111d35;
+	padding: 0.5rem 0;
+	margin-top: 1.25rem;
 	width: 100%;
 	border-bottom: 1px solid #c3e4ea;
 }
@@ -39,5 +34,6 @@
 .required-text {
 	color: #ff0000;
 	font-size: calc(0.75rem + 0.5vw);
+	line-height: 1.5;
 	padding-top: 0.25rem;
 }
