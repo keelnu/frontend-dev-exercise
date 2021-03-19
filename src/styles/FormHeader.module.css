@@ -1,0 +1,26 @@
+/* grouping of chat bubble icon and h1 */
+.form-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem 0 2rem 0;
+}
+
+#chat-bubble-svg {
+	display: block;
+	margin: auto;
+	height: calc(3.5rem + 2vw);
+	width: calc(3.5rem + 2vw);
+	opacity: 35%;
+}
+
+h1 {
+	font-size: calc(2rem + 1.75vw);
+}
+
+.form-header {
+	font-weight: normal;
+	text-align: center;
+	color: #22386f;
+	margin-top: 1.5rem;
+}

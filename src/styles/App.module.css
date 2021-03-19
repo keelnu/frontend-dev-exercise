@@ -1,0 +1,13 @@
+/* min/max width and height values in vw/vh to account for device size */
+.form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 4rem auto;
+	min-width: 60vw;
+	max-width: 66%;
+	min-height: 60%;
+	background: #ffffff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 1rem;
+}
