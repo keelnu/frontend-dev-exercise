@@ -1,9 +1,24 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
+import React, { useState } from 'react';
+import { useForm, Controller } from 'react-hook-form';
+import Select from 'react-select';
 import styles from '../styles/FormContents.module.css';
 
+const selectOptions = [
+  { value: 'select', label: '- Select your ticketing system -' },
+  { value: 'zendesk', label: 'Zendesk' },
+  { value: 'intercom', label: 'Intercom' },
+  { value: 'gorgias', label: 'Gorgias' },
+];
+
 const FormContents = () => {
-  const {register, handleSubmit, errors} = useForm();
+  const {register, handleSubmit, errors, control} = useForm({
+    mode: 'onChange',
+    defaultValue: selectOptions[0],
+  });
+
+  const [selectedOption, setSelectedOption] = useState(selectOptions);
+
+  console.log('Errors', errors);
 
   return (
     // handleSubmit() will only execute is form data is correct
@@ -12,6 +27,7 @@ const FormContents = () => {
         // console logging formData to show what would be submitted to the server in an http post request if we were going to save the form input data 
         console.log('formData', formData);
     })}>
+
       <div className={styles['form-fields']}>
         <input
           className={styles['form-input']}
@@ -36,20 +52,29 @@ const FormContents = () => {
         {errors.website ? <div className={styles['required-text']}>{errors.website.message}</div> : null}
       </div>
 
-      {/* Dropdown does not appear in the errors object */}
+      {/* Could not get react-select to work yet */}
       <div className={styles['form-fields']}>
-        <select
+        <Controller
           className={styles['form-input']}
           name='system'
-          id='system'
-          defaultValue='Select your ticketing system'
-          ref={register({ required: 'Ticketing System Required' })}
-        >
-            <option value="select">Select your ticketing system</option>
-            <option value="zendesk">Zendesk</option>
-            <option value="intercom">Intercom</option>
-            <option value="gorgias">Gorgias</option>
-        </select>
+          control={control}
+          as={Select}
+          defaultValue={selectOptions[0]}
+          options={selectOptions}
+          rules={{ required: 'Ticketing System Required' }}
+          render={(
+            { onChange }
+          ) => (
+            <Select 
+              // onChange={(e) => onChange(e.target.options)}
+              // selected={selectOptions}
+              defaultValue={selectedOption}
+              onChange={setSelectedOption}
+              options={selectOptions}
+              inputRef={register({ required: 'Ticketing System Required' })}
+            />
+          )}
+        />  
         {errors.system ? <div className={styles['required-text']}>{errors.system.message}</div> : null}
       </div>
 
